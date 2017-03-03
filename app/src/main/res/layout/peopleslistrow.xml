@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <!-- Thumbnail Image -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/Profilepicture"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/ProfileName"
+        android:layout_gravity="center"
+        android:text="List Text"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignBottom="@+id/Profilepicture"
+        android:layout_toRightOf="@+id/Profilepicture"
+        android:layout_toEndOf="@+id/Profilepicture"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="listText2"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/phonenumber"
+        android:layout_below="@+id/ProfileName"
+        android:layout_alignLeft="@+id/ProfileName"
+        android:layout_alignStart="@+id/ProfileName"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ideaname"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/IdeaName"
+        android:layout_alignTop="@+id/ProfileName"
+        android:layout_toRightOf="@+id/ProfileName"
+        android:layout_toEndOf="@+id/ProfileName"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ideadesc"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/Ideadesc"
+        android:layout_alignTop="@+id/IdeaName"
+        android:layout_alignLeft="@+id/IdeaName"
+        android:layout_alignStart="@+id/IdeaName"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/ProfileEmail"
+        android:layout_alignBottom="@+id/IdeaName"
+        android:layout_toRightOf="@+id/Ideadesc"
+        android:layout_toEndOf="@+id/Ideadesc"
+        android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="37dp"
+            android:layout_marginEnd="37dp"
+            android:id="@+id/imageView4" />
+    </RelativeLayout>
+</LinearLayout>
